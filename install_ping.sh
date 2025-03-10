@@ -18,3 +18,5 @@ WantedBy=multi-user.target
 
 systemctl daemon-reload
 systemctl enable --now ping.service
+
+echo "Installation complete"
