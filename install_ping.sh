@@ -1,3 +1,6 @@
+wget https://raw.githubusercontent.com/marsky0/f4_proxy/refs/heads/main/ping.py
+mv ping.py /bin/
+
 rm /etc/systemd/system/ping.service
 
 echo "
