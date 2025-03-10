@@ -41,7 +41,7 @@ def update_hosts(new_ip):
         
         with open(HOSTS_FILE, 'w') as file:
             for line in lines:
-                if DOMAIN_SPOT not in line and DOMAIN_FUTURES not in line:
+                if DOMAIN_FUTURES not in line:
                     file.write(line)
             #file.write(f'{new_ip} {DOMAIN_SPOT}\n')
             file.write(f'{new_ip} {DOMAIN_FUTURES}\n')
